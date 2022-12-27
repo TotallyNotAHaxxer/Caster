@@ -10,14 +10,15 @@ Caster is a IoT enumeration framework designed to abuse system API's and other f
 
 Caster has support for many devices, some devices may be able to be controlled more than others such as roku's however there is still info and enumerating support for other devices. A list below provides this detail
 
-| Device Name | Manufac |
-| ----------- | ------- |
-| FireTV      | Amazon  | 
-| Google Cast | Google  |
-| Cast Dongel | Google  |
-| Cast 4K     | Google  |
-| Roku mini   | Roku    |
-| Roku box    | Roku    |
-| AT&T STD Router | AT&T | 
-| Apple TV    | Apple   | 
-| CMS Samsung TV's | Samsung |
+| Device Name | Manufac | Function and Proc | 
+| ----------- | ------- | ----------------- |
+| FireTV      | Amazon  |  Device info      |
+| Google Cast | Google  | Sys functions, System information, ID information, Kill functions etc |
+| Cast Dongel | Google  | Sys functions, System information, ID information, Kill functions etc |
+| Cast 4K     | Google  | Sys functions, System information, ID information, Kill functions etc |
+| Roku mini   | Roku    | Sys functions, System information, ID information, Kill functions etc |
+| Roku box    | Roku    | Sys functions, System information, ID information, Kill functions etc |
+| AT&T STD Router | AT&T |  Device information |
+| Apple TV    | Apple   |  Downloading informational files in apples binary format |
+| CMS Samsung TV's | Samsung | Exploiting LFI, Exploiting system calls, device info |
+| Rasberry PI's | Raspberry Pi Foundation | Scanning for SSh and other port forms |
