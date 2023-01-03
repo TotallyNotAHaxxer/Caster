@@ -48,3 +48,4 @@ The word FLAGS in brackets you would replace with the following flags
 
 * note: Do note that when you use --server the server indexes will refresh given the amount of time you tell caster to re send out packets, if you set the timer with --send=30 and use flag --server=true the server will regenerate every 30 seconds to refresh the data in  the indexes. The standard wait time for caster is 20 seconds which means the server will refresh every 20 seconds.
 
+* Running caster with flags looks like `sudo ./caster --send=20 --server=true --errors=false --trace=false --single=true --arp=true` that example is just all the flags being used, flags like --arp, --server, --single are defualt to run in the background and are set to true as without it you will need to manually set targets to enumerate rather than enumerating all of them at once. --errors, --trace do not run as true by defualt
