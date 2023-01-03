@@ -27,3 +27,24 @@ Caster has support for many devices, some devices may be able to be controlled m
 | Apple TV    | Apple   |  Downloading informational files in apples binary format |
 | CMS Samsung TV's | Samsung | Exploiting LFI, Exploiting system calls, device info |
 | Rasberry PI's | Raspberry Pi Foundation | Scanning for SSh and other port forms |
+
+# Install and Run 
+
+* `sudo apt-get install libpcap-dev`
+* `sudo apt-get install golang`
+* `sudo go build -o caster main.go`
+* `sudo ./caster [FLAGS]`
+
+The word FLAGS in brackets you would replace with the following flags 
+
+|Flag name and lable| Flag detail and info |
+| ----------------- | -------------------- |
+| --arp / -a        | Tells caster to run its ARP module ( suggested ) |
+| --single / -s     | Tells caster's ARP module to only use a single interface, use this flag with --single=true to set this flag to true and use only a single interface, if this is set to false it can cause problems such as disconecting you from your network because caster will take every interface on the machine other than LO and ETH then proceed to use it for discovery |
+| --send / -e | Tells caster's ARP module to send out a batch of packets every so and so seconds, the defualt is 20. For example if you set this flag using --send=30 it will send 255 ARP packets ( one for each host on the network ) every 30 seconds. so if you let caster run for 60 seconds with --send=30 caster would have sent 510 ARP packets |
+| --server / -l | Tells caster to run a server in the background, this server is accessible via http://localhost:5429 and will display information such as documentations, error systems, devices organized, enumeration steps and docs on what the tool does, set this to false with --server=false if you do not want to use the server.The server will run on the background as a background thread / threaded process |
+| --trace / -t | Tells casters error system and catching system to log and debug panics that happen within the program but will prevent the framework from crashing. These panics are not 100% guarenteed and sometimes it can be annoying, this is not due to a bug in the program but the way cards may be used or data may be sent or recieved |
+| --errors / -r | Tells casters error system to display the entire error and throw a panic whenever there is a panic within the program |
+
+* note: Do note that when you use --server the server indexes will refresh given the amount of time you tell caster to re send out packets, if you set the timer with --send=30 and use flag --server=true the server will regenerate every 30 seconds to refresh the data in  the indexes. The standard wait time for caster is 20 seconds which means the server will refresh every 20 seconds.
+
