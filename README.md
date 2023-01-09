@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Caster.png">
+  <img src="DemoCaster.png">
 </p>
 
 # What is caster 
