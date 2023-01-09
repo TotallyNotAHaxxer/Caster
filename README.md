@@ -37,6 +37,7 @@ Caster has support for many devices, some devices may be able to be controlled m
 
 or via make 
 
-* make go
+* make go (removes all source code files and compiles main.go to caster)
+* make install (just builds the program, leaves all source code)
 
 
