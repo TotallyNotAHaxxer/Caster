@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caster Dash</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+      
+            <img width="40px" height="40px" src="https://i.imgur.com/Zk8nNXn.jpg">
+            <center>
+              <span class="logo_name">Caster</span>
+            </center>
+          </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/server-index/new/indexes" class="inactive">
+                    <i class='bx bx-ghost'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/hotmaps" class="active">
+                    <i class='bx bxs-hot'></i>
+                    <span class="links_name">Hot Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="/devs" class="inactive">
+                    <i class='bx bxs-devices'></i>
+                    <span class="links_name">Devices</span>
+                </a>
+            </li>
+            <li>
+                <a href="/roku" class="inactive">
+                    <i class='bx bx-cctv'></i>
+                    <span class="links_name">Roku Devices</span>
+                </a>
+            </li>
+            <li>
+                <a href="/cast" class="inactive">
+                    <i class='bx bxl-google'></i>
+                    <span class="links_name">Cast Devices</span>
+                </a>
+            </li>
+            <li>
+                <a href="/rpi" class="inactive">
+                    <i class='bx bx-memory-card'></i>
+                    <span class="links_name">Rasberry PI Devices</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adevs" class="inactive">
+                  <i class='bx bxl-apple'></i>
+                  <span class="links_name">Apple Devices</span>
+                </a>
+              </li>
+              <li>
+                <a href="/azdevs" class="inactive">
+                  <i class='bx bxl-amazon'></i>
+                  <span class="links_name">Amazon Devices</span>
+                </a>
+              </li>
+              <li>
+                <a href="/ro" class="inactive">
+                  <i class='bx bx-wifi'></i>
+                  <span class="links_name">Routers</span>
+                </a>
+              </li>
+            <li>
+                <a href="/server-index/new/indexes-errors" class="inactive">
+                    <i class='bx bxs-error-alt'></i>
+                    <span class="links_name">Documentation</span>
+                </a>
+            </li>
+            <li>
+                <a href="/server-index/new/indexes-about" class="inactive">
+                    <i class='bx bx-cube'></i>
+                    <span class="links_name">What is this tool</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.github.com/ArkAngeL43" class="inactive">
+                    <i class='bx bxl-gitlab'></i>
+                    <span class="links_name">Github</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="art">
+                 ______     ______     ______     ______     ______     ______     ______     ______     __  __     ______     __     ______   __  __    
+                /\  ___\   /\  ___\   /\  __ \   /\  == \   /\  ___\   /\  ___\   /\  ___\   /\  ___\   /\ \/\ \   /\  == \   /\ \   /\__  _\ /\ \_\ \   
+                \ \___  \  \ \ \____  \ \  __ \  \ \  __ <  \ \  __\   \ \___  \  \ \  __\   \ \ \____  \ \ \_\ \  \ \  __<   \ \ \  \/_/\ \/ \ \____ \  
+                 \/\_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\  \/\_____\  \ \_____\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\ 
+                  \/_____/   \/_____/   \/_/\/_/   \/_/ /_/   \/_____/   \/_____/   \/_____/   \/_____/   \/_____/   \/_/ /_/   \/_/     \/_/   \/_____/ 
+            </div>
+            <hr>
+            <br>
+            <div class="caster-boxes">
+                <div class="recent-sales box">
+                    <div class="title">Hot Keys and Settings</div>
+                    <br>
+                    <div class="caster-varx">
+                        <ul class="details">
+                            <li class="topic"></li>
+                            <li><a href="#"></a>
+                                Hot settings are settings within caster that may work with keys and systems, for example, if you hit CTRL+C the program will shut down and show its nodes. Hot Settings may also consist of flags
+                                <br><br>
+                                <hr>
+                                <i style="color: rebeccapurple;">
+                                    Flag (--arp) will tell caster to work with the ARP module, it is 100% suggested that you ensure you enable this flag
+                                    set this flag to true to enable the module, --arp=true and false to disable the module --arp=false
+                                </i>
+                                <hr>
+                                <i style="color: rebeccapurple;">
+                                    Flag (--send) will tell caster the appropriate amount of time to send out ARP packets and update the local server to use this flag use it like so (--send=int) where int is the number of time in seconds you want caster to wait before updating servers, sending out ARP packets and more DEFUALT IS 20 SECONDS
+                                </i>
+                                <hr>
+                                <i style="color: rebeccapurple;">
+                                    Flag (--single) Will tell the framework to use one interface only and to skip localhost, the ARP module in caster by defualt will search for every interface and network card you have on your system that is not LocalHost and will use it to ARP for devices and seperate them, this can take up system resources so you can tell caster to use a single interface by using --single=true
+                                </i>
+                                <hr>
+                                <i style="color: rebeccapurple;">
+                                    Flag (--server) Will tell the framework enable or disable the server, the server by defualt runs in the background, but if you want to disable the local HTTP server you can use --server=false to disable the http server
+                                </i>
+                                <hr>
+
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+
+</html>
+
+<style>
+    /* Googlefont Poppins CDN Link */
+    @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+
+
+    body,
+    html {
+        background-color: #000;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+    }
+
+    .art {
+        text-align: center;
+        font-family: monospace;
+        white-space: pre;
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        width: 240px;
+        background: #000;
+        transition: all .5s ease
+    }
+
+    .sidebar.active {
+        width: 60px
+    }
+
+    .sidebar .logo-details {
+        height: 80px;
+        display: flex;
+        align-items: center
+    }
+
+    .sidebar .logo-details i {
+        font-size: 28px;
+        font-weight: 500;
+        color: orangered;
+        min-width: 60px;
+        text-align: center
+    }
+
+    .sidebar .logo-details .logo_name {
+        color: orangered;
+        font-size: 24px;
+        font-weight: 500
+    }
+
+    .sidebar .nav-links {
+        margin-top: 10px
+    }
+
+    .sidebar .nav-links li {
+        position: relative;
+        list-style: none;
+        height: 50px
+    }
+
+    .sidebar .nav-links li a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all .4s ease
+    }
+
+    .sidebar .nav-links li a.active {
+        background: #FC4C02
+    }
+
+    .sidebar .nav-links li a:hover {
+        background: #FC4C02
+    }
+
+    .sidebar .nav-links li i {
+        min-width: 60px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff
+    }
+
+    .sidebar .nav-links li a .links_name {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        white-space: nowrap
+    }
+
+    .sidebar .nav-links .log_out {
+        position: absolute;
+        bottom: 0;
+        width: 100%
+    }
+
+    .home-section {
+    position: relative;
+    background-image: url("/m.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all .5s ease
+  }
+
+    .sidebar.active~.home-section {
+        width: calc(100% - 60px);
+        left: 60px
+    }
+
+    .home-section nav {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: calc(100% - 240px);
+        left: 240px;
+        z-index: 100;
+        padding: 0 20px;
+        box-shadow: 0 1px 1px orangered;
+        transition: all .5s ease
+    }
+
+    .sidebar.active~.home-section nav {
+        left: 60px;
+        width: calc(100% - 60px)
+    }
+
+    .home-section nav .sidebar-button {
+        color: orangered;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500
+    }
+
+    nav .sidebar-button i {
+        font-size: 35px;
+        margin-right: 10px
+    }
+
+
+    .home-section .home-content {
+        position: relative;
+        padding-top: 104px
+    }
+
+    .home-content .overview-boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        margin-bottom: 26px
+    }
+
+    .overview-boxes .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 4 - 15px);
+        background: #fff;
+        padding: 15px 14px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .overview-boxes .box-topic {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .home-content .box .number {
+        display: inline-block;
+        font-size: 35px;
+        margin-top: -6px;
+        font-weight: 500
+    }
+
+    .home-content .box .indicator {
+        display: flex;
+        align-items: center
+    }
+
+
+    .home-content .total-order {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .home-content .caster-boxes {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .home-content .caster-boxes .recent-sales {
+        width: 85%;
+        background: #fff;
+        padding: 20px 30px;
+        margin: 0 200px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .home-content .caster-boxes .caster-varx {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .caster-boxes .box .title {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .caster-boxes .caster-varx li.topic {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .caster-boxes .caster-varx li {
+        list-style: none;
+        font-weight: bold;
+        margin: 8px 0
+    }
+
+    .caster-boxes .caster-varx li a {
+        font-size: 18px;
+        color: #000;
+        font-size: 400;
+        text-decoration: none
+    }
+
+    .caster-boxes .box .button {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end
+    }
+
+
+    .home-content .caster-boxes .caster-rem {
+        width: 35%;
+        background: #fff;
+        padding: 20px 30px;
+        margin: 0 20px 0 0;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .caster-boxes .caster-rem li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0
+    }
+
+    .caster-boxes .caster-rem li a img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-right: 10px;
+        background: #333
+    }
+
+    .caster-boxes .caster-rem li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none
+    }
+
+    .price,
+    .caster-boxes .caster-rem li .product {
+        font-size: 17px;
+        font-weight: 400;
+        color: #333
+    }
+
+    @media (max-width:1240px) {
+        .sidebar {
+            width: 60px
+        }
+
+        .sidebar.active {
+            width: 220px
+        }
+
+        .home-section {
+            width: calc(100% - 60px);
+            left: 60px
+        }
+
+        .sidebar.active~.home-section {
+            left: 220px;
+            width: calc(100% - 220px);
+            overflow: hidden
+        }
+
+        .home-section nav {
+            width: calc(100% - 60px);
+            left: 60px
+        }
+
+        .sidebar.active~.home-section nav {
+            width: calc(100% - 220px);
+            left: 220px
+        }
+    }
+
+    @media (max-width:1150px) {
+        .home-content .caster-boxes {
+            flex-direction: column
+        }
+
+        .home-content .caster-boxes .box {
+            width: 100%;
+            overflow-x: scroll;
+            margin-bottom: 30px
+        }
+
+        .home-content .caster-boxes .caster-rem {
+            margin: 0
+        }
+    }
+
+    @media (max-width:1000px) {
+        .overview-boxes .box {
+            width: calc(100% / 2 - 15px);
+            margin-bottom: 15px
+        }
+    }
+
+    @media (max-width:700px) {
+
+        nav .profile-details .admin_name,
+        nav .profile-details i,
+        nav .sidebar-button .dashboard {
+            display: none
+        }
+
+        .home-section nav .profile-details {
+            height: 50px;
+            min-width: 40px
+        }
+
+        .home-content .caster-boxes .caster-varx {
+            width: 560px
+        }
+    }
+
+    @media (max-width:550px) {
+        .overview-boxes .box {
+            width: 100%;
+            margin-bottom: 15px
+        }
+
+        .sidebar.active~.home-section nav .profile-details {
+            display: none
+        }
+    }
+
+    @media (max-width:400px) {
+        .sidebar {
+            width: 0
+        }
+
+        .sidebar.active {
+            width: 60px
+        }
+
+        .home-section {
+            width: 100%;
+            left: 0
+        }
+
+        .sidebar.active~.home-section {
+            left: 60px;
+            width: calc(100% - 60px)
+        }
+
+        .home-section nav {
+            width: 100%;
+            left: 0
+        }
+
+        .sidebar.active~.home-section nav {
+            left: 60px;
+            width: calc(100% - 60px)
+        }
+    }
+
+    .ascii_art {
+        font-family: monospace;
+        white-space: pre
+    }
+
+    .Paragraph_Starter {
+        font-weight: 700;
+        color: #000;
+        font-size: 40px
+    }
+
+    .Base_Text {
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        white-space: pre
+    }
+
+    .Section_font {
+        color: #081d45;
+        font-size: medium;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100
+    }
+
+    .sidebar .logo-details img {
+    border-radius: 60%; 
+    margin-left: 10px;
+  }
+</style>
