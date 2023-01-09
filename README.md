@@ -35,4 +35,8 @@ Caster has support for many devices, some devices may be able to be controlled m
 * `sudo go build -o caster main.go`
 * `sudo ./caster --shelp` or `sudo ./caster --help`
 
+or via make 
+
+* make go
+
 
