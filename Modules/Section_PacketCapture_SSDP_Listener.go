@@ -15,8 +15,8 @@ type ID struct {
 var Id ID
 
 func Listener(interfacename string) {
-	handler, x := pcap.OpenOffline("/home/totallynotahaxxer/Desktop/SSDPCAPTURE.pcapng")
-	//handler, x := pcap.OpenLive(interfacename, 65535, true, pcap.BlockForever)
+	//handler, x := pcap.OpenOffline("/home/totallynotahaxxer/Desktop/SSDPCAPTURE.pcapng")
+	handler, x := pcap.OpenLive(interfacename, 65535, true, pcap.BlockForever)
 	if x != nil {
 		ErrorsPackets["pcapOpenLive"]()
 		fmt.Print(x)
