@@ -4,7 +4,7 @@ Caster, Abusing ECP est 2023.
   <img alt="Roku ECP" src="DemoCaster.png">
 </p>
 
-# What is caster 
+# What is caster - The ECP manipulator for Roku and the ghost in the Cast
 
 Caster is a IoT enumeration framework designed to abuse system API's and other forms of endpoints by constantly enumerating and searching for devices on the network. Caster can do many things depending on the device you are trying to enumerate and has many features which make it worth the use like the following below.
 
