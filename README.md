@@ -6,7 +6,7 @@ Caster, Abusing ECP est 2023.
 
 # What is caster - The ECP manipulator for Roku and the ghost in the Cast
 
-Caster is a IoT enumeration framework designed to abuse system API's and other forms of endpoints by constantly enumerating and searching for devices on the network. Caster can do many things depending on the device you are trying to enumerate and has many features which make it worth the use like the following below.
+Caster is a IoT enumeration framework designed to abuse system API's (Such as ECP in Roku devices) and other forms of endpoints by constantly enumerating and searching for devices on the network. Caster can do many things depending on the device you are trying to enumerate and has many features which make it worth the use like the following below.
 
 * Server: Once you start caster a local HTTP server will be started which outputs amazing information into different categories such as routers, devices and even gives you a good documentation in case you need help. ( Server is threaded seperately and can run offline )
 * Port scanner: Because of issues that may occure with the ARP module figuring out how to categorize devices, caster has a built in port scanner which can categorize devices based on open static ports and ID's. This is something you can also use!
